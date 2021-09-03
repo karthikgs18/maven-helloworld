@@ -1,1 +1,1 @@
-New Maven Hello World Project
+Maven Hello World Project
