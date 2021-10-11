@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/hariharanep4/maven-helloworld.git'
+                git 'https://github.com/karthikgs18/maven-helloworld.git'
 
                 // Run Maven on a Unix agent.
                 sh "/usr/share/maven/bin/mvn clean package"
