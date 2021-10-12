@@ -22,9 +22,9 @@ pipeline {
                 }
             }
         }
-         stage('Deploy') {
+        stage('Deploy') {
             steps {
-                deploy adapters: [tomcat8(credentialsId: 'Jfrog', path: '', url: 'http://localhost:9090')], contextPath: null, war: '**/*.war'
+                deploy adapters: [tomcat8(credentialsId: 'tomcat', path: '', url: 'http://localhost:9090')], contextPath: null, war: '**/*.war'
             }
         } 
     }
